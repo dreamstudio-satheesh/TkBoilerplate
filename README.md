@@ -1,6 +1,8 @@
 # TkBoilerplate
 Python boilerplate for building desktop applications with Tkinter
 
+# Tkinter Boilerplate Project
+
 ## Project Purpose
 This repository provides a standardized Python boilerplate for building desktop applications with Tkinter. The goal is to simplify the process of creating apps like ERP systems, POS, or billing software by offering a structured and secure starting point. Key features include:
 
@@ -20,6 +22,14 @@ This repository provides a standardized Python boilerplate for building desktop 
 ### Prerequisites
 - Python 3.8 or later
 - pip (Python package manager)
+
+### Clone the Repository
+To get started, clone the repository using the following command:
+
+```bash
+git clone https://github.com/dreamstudio-satheesh/TkBoilerplate.git
+cd TkBoilerplate
+```
 
 ### Create a Virtual Environment
 Creating a virtual environment ensures a clean Python environment for your project. Follow the steps below:
@@ -96,8 +106,8 @@ project/
    ```
 
 ## Contributions
-Contributions are welcome! Please follow the guidelines in `CONTRIBUTING.md`.
+Contributions are welcome! Please follow the guidelines in [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## License
-This project is licensed under the MIT License. See `LICENSE` for details.
+This project is licensed under the [MIT License](https://github.com/dreamstudio-satheesh/TkBoilerplate/blob/master/LICENSE).
 
