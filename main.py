@@ -1,12 +1,23 @@
-#!/usr/bin/env python3
-# Application entry point
-from views.login_view import display_login
-from views.dashboard_view import display_dashboard
+import tkinter as tk
+from utils.menu_manager import MenuManager
+from controllers.base_controller import BaseController
 
-def main():
-    """Main application entry point."""
-    display_login()
-    # Add your main application logic here
+class App(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title("Tkinter Boilerplate App")
+        self.geometry("800x600")
+
+        # Initialize Menu Manager
+        self.menu_manager = MenuManager(self)
+        self.menu_manager.setup_menu()
+
+        # Initialize Router
+        self.router = BaseController(self)
+
+        # Load Default View (Login)
+        self.router.load_controller("auth_controller", "LoginView")
 
 if __name__ == "__main__":
-    main()
+    app = App()
+    app.mainloop()
