@@ -1,7 +1,6 @@
 # TkBoilerplate
 Python boilerplate for building desktop applications with Tkinter
 
-
 ## Project Purpose
 This repository provides a standardized Python boilerplate for building desktop applications with Tkinter. The goal is to simplify the process of creating apps like ERP systems, POS, or billing software by offering a structured and secure starting point. Key features include:
 
@@ -61,14 +60,32 @@ Creating a virtual environment ensures a clean Python environment for your proje
 ### Directory Structure
 ```
 project/
-|-- venv/               # Virtual environment directory
-|-- app/
-|   |-- models/         # Data models
-|   |-- views/          # UI components
-|   |-- controllers/    # Application logic
-|-- requirements.txt    # Dependency list
-|-- main.py             # Entry point for the app
-|-- README.md           # Documentation
+|-- .gitignore
+|-- LICENSE
+|-- README.md
+|-- config/
+|   |-- __init__.py
+|   |-- database.py
+|-- controllers/
+|   |-- __init__.py
+|   |-- auth_controller.py
+|-- main.py
+|-- models/
+|   |-- __init__.py
+|   |-- user.py
+|-- requirements.txt
+|-- tests/
+|   |-- __init__.py
+|   |-- test_authentication.py
+|-- utils/
+|   |-- __init__.py
+|   |-- menu_manager.py
+|   |-- security.py
+|   |-- validators.py
+|-- views/
+|   |-- __init__.py
+|   |-- dashboard_view.py
+|   |-- login_view.py
 ```
 
 ### Running the Application
@@ -83,5 +100,4 @@ Contributions are welcome! Please follow the guidelines in `CONTRIBUTING.md`.
 
 ## License
 This project is licensed under the MIT License. See `LICENSE` for details.
-
 
